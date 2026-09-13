@@ -8,8 +8,8 @@
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/ShanmukhJonnalagadda/whoop-sleep-recovery-dashboard.git
-cd whoop-sleep-recovery-dashboard
+git clone https://github.com/ShanmukhJonnalagadda/Personal-sleep-recovery-privacy.git
+cd Personal-sleep-recovery-privacy
 ```
 
 Replace the URL if you choose a different repository name.
