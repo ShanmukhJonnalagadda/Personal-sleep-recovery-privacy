@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Sleep & Recovery Analytics — V2 Beta" />
+  <title>Privacy Policy | Sleep & Recovery Analytics</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #667085;
+      --border: #e5e7eb;
+      --accent: #2176d2;
+      --accent-soft: #eef5fd;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 48px auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 48px;
+      box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.02em;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .effective {
+      color: var(--muted);
+      margin: 0 0 32px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 34px;
+      margin-bottom: 10px;
+      scroll-margin-top: 24px;
+    }
+
+    p { margin: 0 0 14px; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .notice {
+      background: #fafbfc;
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 22px 0 28px;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 38px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      .wrap { margin: 20px auto; }
+      .card { padding: 28px 22px; border-radius: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <span class="eyebrow">Sleep & Recovery Analytics — V2 Beta</span>
+      <h1>Privacy Policy</h1>
+      <p class="effective"><strong>Effective date:</strong> September 16, 2026</p>
+
+      <div class="notice">
+        Sleep & Recovery Analytics (“the Application”) is operated by Shanmukh Jonnalagadda.
+        This notice describes the multi-user beta. Each invited user connects their own WHOOP
+        account and receives a separate personal dashboard.
+      </div>
+
+      <h2>Information accessed</h2>
+      <p>
+        Google sign-in supplies identity claims such as a stable account identifier, verified
+        email address and token expiry. The email is checked against the invitation list and
+        displayed during the session. A pseudonymous identifier derived from Google's issuer and
+        account identifier keys stored account records.
+      </p>
+      <p>
+        With your WHOOP authorization, the Application accesses your WHOOP member ID, recovery,
+        physiological cycles and strain, sleep and workouts. WHOOP's profile response can include
+        your name and email; this implementation retains the member ID and discards the other
+        profile fields. The Application does not receive or store your Google or WHOOP password.
+      </p>
+      <p>
+        OAuth access and refresh tokens are retained in encrypted form to synchronize your data
+        when you are not actively using the Application. Personal targets and synchronization
+        status are also stored. Optional journal CSV uploads are processed in the current browser
+        session and are not deliberately persisted to the database or repository.
+      </p>
+
+      <h2>Uses</h2>
+      <p>
+        Information is used to authenticate invited users, connect the correct WHOOP member,
+        synchronize personal records, calculate analytics, display comparisons and observations,
+        generate requested reports, remember targets and operate or troubleshoot the Application.
+        Data is not sold or used for advertising.
+      </p>
+
+      <h2>Storage and service providers</h2>
+      <p>
+        Streamlit Community Cloud hosts and processes the application; Supabase stores account
+        records, encrypted WHOOP tokens, targets and health metrics. GitHub hosts private source
+        code and runs scheduled synchronization through GitHub Actions. Google provides login and
+        WHOOP provides authorized wearable data. Necessary credentials are supplied through
+        hosting and workflow secret settings.
+      </p>
+      <p>
+        These services may retain operational logs or backups according to their own settings and
+        policies. Application logs are designed to omit tokens and personal health records.
+        Downloaded reports are stored wherever you save them.
+      </p>
+
+      <h2>Access and sharing</h2>
+      <p>
+        Ordinary users can access only their own account's stored dashboard data. The operator
+        administers the hosting and database systems and can access stored records for operation,
+        support and deletion requests. Infrastructure providers process data as necessary to
+        supply their services. Information may also be disclosed when legally required. WHOOP and
+        Google process information under their own policies.
+      </p>
+
+      <h2>Retention, disconnect and deletion</h2>
+      <p>
+        Data is retained while you use the Application unless you delete it or request deletion.
+        <strong>Disconnect WHOOP</strong> removes stored tokens and stops future synchronization
+        but retains your saved history and targets. <strong>Delete my app data</strong> removes
+        the active account record, stored metrics, targets, tokens and pending authorization state.
+      </p>
+      <p>
+        The Application attempts to revoke WHOOP access during these actions. If remote revocation
+        cannot be confirmed, remove the integration in WHOOP settings as well. Deletion from the
+        active database does not instantly erase provider backups, existing downloads or
+        information previously displayed in an open browser tab; provider backups follow the
+        configured service retention policies. Signing in and reconnecting after deletion creates
+        a new account record.
+      </p>
+      <p>
+        You may request access to or deletion of your stored information using the contact below.
+        Requests will be handled within 30 days unless retention is legally required. Removing an
+        email from the invitation list alone does not disconnect an existing WHOOP integration.
+      </p>
+
+      <h2>Choices and security</h2>
+      <p>
+        Participation is optional. You may stop using the Application, decline authorization,
+        disconnect or revoke access, delete app data and contact the operator about your
+        information. Server-side access controls, encrypted WHOOP tokens and protected secret
+        settings are used to safeguard information. No online system can guarantee complete
+        security.
+      </p>
+
+      <h2>Health information and age</h2>
+      <p>
+        The Application provides informational and educational analytics, not medical advice,
+        diagnosis or treatment. It is not intended for children under 18.
+      </p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        This notice may be updated as the beta evolves, with a revised effective date.
+      </p>
+      <p>
+        <strong>Shanmukh Jonnalagadda</strong><br />
+        Email: <a href="mailto:shanmukhj21@gmail.com">shanmukhj21@gmail.com</a>
+      </p>
+
+      <footer>
+        Privacy Policy for Sleep & Recovery Analytics — V2 Beta
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
